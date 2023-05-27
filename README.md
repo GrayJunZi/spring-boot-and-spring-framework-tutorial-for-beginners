@@ -61,3 +61,19 @@ Spring框架提供了构建易于维护的应用程序所需的最重要特性: 
 - 选代4:松耦合 - Spring Level 2
   - Spring Annotations
   - Spring框架将创建、管理和自动连接对象
+
+## 三、创建 Spring Framework 项目
+
+我们可以使用引导程序 [start.spring.io](https://start.spring.io) 创建一个新的项目。
+
+> - `Project` -> Maven
+> - `Language` -> Java
+> - `Spring Boot` -> 3.1.0
+> - `Project Metadata`
+>   - `Group` -> com.grayjunzi
+>   - `Artifact` -> learn-spring-framework
+>   - `Name` -> learn-spring-framework
+>   - `Description` -> Demo project for Spring Boot
+>   - `Package name` -> com.grayjunzi.learn-spring-framework
+>   - `Packaging` -> Jar
+>   - `Java` -> 17
