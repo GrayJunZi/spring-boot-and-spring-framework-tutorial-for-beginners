@@ -107,3 +107,9 @@ Spring框架提供了构建易于维护的应用程序所需的最重要特性: 
 - GameRunner 类
 - GamingConsole 接口
   - Game 实现类: Mario, SuperContra, Pacman 等。
+
+## 七、引入Spring框架使Java应用程序实现松拥合
+
+目前的阶段是对象的创建完全由我们自己管理，这些对象是在Java虚拟机中创建的，创建这些对象并将它们连接在一起的代码是由我们编写的。
+
+下一步我们将使用 Spring Frmaework 管理所有的类，为我们创建对象并将它们连接在一起。
