@@ -77,3 +77,26 @@ Spring框架提供了构建易于维护的应用程序所需的最重要特性: 
 >   - `Package name` -> com.grayjunzi.learn-spring-framework
 >   - `Packaging` -> Jar
 >   - `Java` -> 17
+
+## 四、Java游戏应用程序入门
+
+设计 GameRunner 游戏 (Mario, SuperContra, Pacman 等)
+
+紧耦合代码:
+- GamRunner 类
+- Game 类: Mario, SuperContra, Pacman 等。
+
+## 五、理解紧耦合与松耦合
+
+### 为什么耦合很重要?
+
+在构建伟大的软件时，耦合甚至更为重要。
+
+- 科技中唯一不变的就是变化
+  - 业务需求变化
+  - 框架变化
+  - 代码更改
+- 我们希望尽可能的松耦合。
+- 我们希望用尽可能少的代码更改来进行功能更改。
+
+我们可以使用接口(interface)和spring框架帮助解决松耦合。
