@@ -100,3 +100,10 @@ Spring框架提供了构建易于维护的应用程序所需的最重要特性: 
 - 我们希望用尽可能少的代码更改来进行功能更改。
 
 我们可以使用接口(interface)和spring框架帮助解决松耦合。
+
+## 六、引入Java接口使应用程序实现松耦合
+
+松耦合代码：
+- GameRunner 类
+- GamingConsole 接口
+  - Game 实现类: Mario, SuperContra, Pacman 等。
