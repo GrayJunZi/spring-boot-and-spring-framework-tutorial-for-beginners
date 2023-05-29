@@ -115,3 +115,10 @@ Spring框架提供了构建易于维护的应用程序所需的最重要特性: 
 下一步我们将使用 Spring Frmaework 管理所有的类，为我们创建对象并将它们连接在一起。
 
 ### 07. 创建Java Bean和启动Spring配置
+
+### 08. 创建更多Java Bean
+
+#### record
+
+`record` 是一个新功能，它是在JDK 16中引入的，通常我们创建Java类是时需要创建许多 getter、setter、构造函数、equals、hashcode 等， 
+然而，当使用`record`时可消除创建Java Bean的冗长，它们是自动创建的。
