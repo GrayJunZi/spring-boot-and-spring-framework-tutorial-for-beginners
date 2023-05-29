@@ -1,11 +1,9 @@
 package com.grayjunzi.learnspringframework;
 
 import com.grayjunzi.learnspringframework.game.GameRunner;
-import com.grayjunzi.learnspringframework.game.MarioGame;
 import com.grayjunzi.learnspringframework.game.PacmanGame;
-import com.grayjunzi.learnspringframework.game.SuperContraGame;
 
-public class AppGamingBasicJava {
+public class App01GamingBasicJava {
     public static void main(String[] args){
 
         // var game = new MarioGame();
@@ -16,3 +14,4 @@ public class AppGamingBasicJava {
 
     }
 }
+

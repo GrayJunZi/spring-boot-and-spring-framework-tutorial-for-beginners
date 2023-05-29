@@ -44,7 +44,7 @@ Spring框架提供了构建易于维护的应用程序所需的最重要特性: 
 - 自动布线(Auto wiring)
 - 组件扫描(Component Scan)
 
-### Spring框架入门-方法
+### 01. Spring框架入门-方法
 
 设计Game Runner运行游戏 (Mario,SuperContra,Pacman等)的迭代方法:
 
@@ -62,7 +62,7 @@ Spring框架提供了构建易于维护的应用程序所需的最重要特性: 
   - Spring Annotations
   - Spring框架将创建、管理和自动连接对象
 
-## 三、创建 Spring Framework 项目
+### 02. 创建 Spring Framework 项目
 
 我们可以使用引导程序 [start.spring.io](https://start.spring.io) 创建一个新的项目。
 
@@ -78,7 +78,7 @@ Spring框架提供了构建易于维护的应用程序所需的最重要特性: 
 >   - `Packaging` -> Jar
 >   - `Java` -> 17
 
-## 四、Java游戏应用程序入门
+### 03. Java游戏应用程序入门
 
 设计 GameRunner 游戏 (Mario, SuperContra, Pacman 等)
 
@@ -86,9 +86,9 @@ Spring框架提供了构建易于维护的应用程序所需的最重要特性: 
 - GamRunner 类
 - Game 类: Mario, SuperContra, Pacman 等。
 
-## 五、理解紧耦合与松耦合
+### 04. 理解紧耦合与松耦合
 
-### 为什么耦合很重要?
+#### 为什么耦合很重要?
 
 在构建伟大的软件时，耦合甚至更为重要。
 
@@ -101,15 +101,17 @@ Spring框架提供了构建易于维护的应用程序所需的最重要特性: 
 
 我们可以使用接口(interface)和spring框架帮助解决松耦合。
 
-## 六、引入Java接口使应用程序实现松耦合
+### 05. 引入Java接口使应用程序实现松耦合
 
 松耦合代码：
 - GameRunner 类
 - GamingConsole 接口
   - Game 实现类: Mario, SuperContra, Pacman 等。
 
-## 七、引入Spring框架使Java应用程序实现松拥合
+### 06. 引入Spring框架使Java应用程序实现松拥合
 
 目前的阶段是对象的创建完全由我们自己管理，这些对象是在Java虚拟机中创建的，创建这些对象并将它们连接在一起的代码是由我们编写的。
 
 下一步我们将使用 Spring Frmaework 管理所有的类，为我们创建对象并将它们连接在一起。
+
+### 07. 创建Java Bean和启动Spring配置
