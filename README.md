@@ -122,3 +122,5 @@ Spring框架提供了构建易于维护的应用程序所需的最重要特性: 
 
 `record` 是一个新功能，它是在JDK 16中引入的，通常我们创建Java类是时需要创建许多 getter、setter、构造函数、equals、hashcode 等， 
 然而，当使用`record`时可消除创建Java Bean的冗长，它们是自动创建的。
+
+### 09. 使用 Spring Framework 实现自动装配
