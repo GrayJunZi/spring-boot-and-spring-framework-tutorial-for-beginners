@@ -124,3 +124,46 @@ Spring框架提供了构建易于维护的应用程序所需的最重要特性: 
 然而，当使用`record`时可消除创建Java Bean的冗长，它们是自动创建的。
 
 ### 09. 使用 Spring Framework 实现自动装配
+
+### 10. 关于 Spring Framework 的一些问题
+
+- 问题1: 什么是 Spring Container、Spring Context、IOC Container、Application Context？
+- 问题2: Java Bean 与 Spring Bean 有什么区别？
+- 问题3: 如何列出Spring Framework管理的所有Beans？
+- 问题4: 如果有多个匹配的Bean可用怎么办？
+- 问题5: Spring管理对象与自动装配，如何让Spring为我们创建对象？
+
+#### 什么是 Spring Container？
+
+- `Spring Container` - Spring容器是管理Spring Bean及其生命周期(lifecycle)的容器。
+- `Bean Factory` - 是最基本的Spring容器。
+- `Application Context` - 是高级 Spring容器 企业特有的功能。
+  - web应用程序更易于使用。
+  - 易于国际化。
+  - 易于Spring AOP集成。
+
+#### Java Bean 与 Spring Bean 有什么区别？
+
+- Java Bean: 类遵循3个约束
+  1. 具有公共默认 (无参数)造函数
+  2. 允许使用getter和setter方法访问它们的属性
+  3. 实现java.io.Serializable
+  
+- POJO: 普通的旧Java对象
+  1. 没有限制
+  2. 任何Java对象都是一个POJO
+
+- Spring Bean: 任何被Spring管理的Java对象都是 SpringBean。
+  1. Spring使用IOC容器(Bean Factory or Application Context)来管理这些对象。
+
+#### 如何列出Spring框架管理的所有Bean
+
+调用方法 `context.getBeanDefinitionNames()` 获取IOC容器中所有的对象名称。
+```java
+Arrays.stream(context.getBeanDefinitionNames())
+        .forEach(System.out::println);
+```
+
+#### 如果有多个匹配的Bean可用如何处理？
+
+可以在类上加入注解 `@Primary`，或者使用 `@Qualifier` 

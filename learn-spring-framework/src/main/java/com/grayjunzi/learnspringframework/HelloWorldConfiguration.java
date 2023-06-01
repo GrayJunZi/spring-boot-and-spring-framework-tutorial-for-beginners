@@ -1,7 +1,9 @@
 package com.grayjunzi.learnspringframework;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 record Person(String name,int age,Address address) { };
 
@@ -20,6 +22,7 @@ public class HelloWorldConfiguration {
     }
 
     @Bean
+    @Primary
     public  Person person(){
         return new Person("Ravi",20,new Address("Main Street","Utrecht"));
     }
@@ -34,12 +37,19 @@ public class HelloWorldConfiguration {
         return new Person(name,age,address3);
     }
 
+    @Bean
+    public Person person4Qualifier(String name,int age, @Qualifier("address3qualifier")Address address3){
+        return new Person(name,age,address3);
+    }
+
     @Bean(name="address2")
+    @Primary
     public Address address(){
         return  new Address("Baker Street","London");
     }
 
     @Bean
+    @Qualifier("address3qualifier")
     public Address address3(){
         return  new Address("Baker Street 3","London");
     }
