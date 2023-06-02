@@ -166,4 +166,7 @@ Arrays.stream(context.getBeanDefinitionNames())
 
 #### 如果有多个匹配的Bean可用如何处理？
 
-可以在类上加入注解 `@Primary`，或者使用 `@Qualifier` 
+可以在类上加入注解 `@Primary`，或者使用 `@Qualifier
+
+### 11. 使用 Spring Framework 管理Java游戏应用程序Beans
+
