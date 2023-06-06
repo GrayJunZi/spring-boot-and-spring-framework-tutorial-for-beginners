@@ -170,3 +170,4 @@ Arrays.stream(context.getBeanDefinitionNames())
 
 ### 11. 使用 Spring Framework 管理Java游戏应用程序Beans
 
+## 三、使用 Spring Framework 来创建和管理Java对象
