@@ -171,3 +171,9 @@ Arrays.stream(context.getBeanDefinitionNames())
 ### 11. 使用 Spring Framework 管理Java游戏应用程序Beans
 
 ## 三、使用 Spring Framework 来创建和管理Java对象
+
+### 01. Primary和Qualifier 应该使用哪一种注解
+
+- `@Primary` - 当多个候选人(candidates)都符合条件时，其中一个有@Primary则应该优先考虑该bean。
+- `@Qualifier` - 一个特定的bean应该是自动注入(auto-wired)的 (这个bean的名字可以用作限定符)。
+> `@Qualifier` 的优先级高于 `@Primary`。
