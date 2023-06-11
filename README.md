@@ -185,3 +185,13 @@ Arrays.stream(context.getBeanDefinitionNames())
 - 字段: 依赖关系是使用反射注入的。
 
 > Spring团队建议基于构造器的注入，因为创建对象时会自动设置依赖项!
+
+### 03. 理解重要术语(Terminology)
+
+- `@Component(...)` - 类的实例将由Spring框架管理。
+- `Dependency` - 指定实现类。
+- `Component Scan` - 扫描组件类。
+- `Dependency Injection` - 识别beans，它们的依赖关系，并将它们连接在一起(提供I0C-控制反转)
+  - `Spring Beans` - Spring Framework 管理的对象。
+  - `IoC container` - 管理beans的生命周期和依赖关系。
+  - `Autowiring` - 连接SpringBean依赖项的过程。
