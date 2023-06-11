@@ -177,3 +177,11 @@ Arrays.stream(context.getBeanDefinitionNames())
 - `@Primary` - 当多个候选人(candidates)都符合条件时，其中一个有@Primary则应该优先考虑该bean。
 - `@Qualifier` - 一个特定的bean应该是自动注入(auto-wired)的 (这个bean的名字可以用作限定符)。
 > `@Qualifier` 的优先级高于 `@Primary`。
+
+### 02. 不同类型的依赖注入
+
+- 基于构造函数: 依赖关系是通过使用构造函数创建Bean来设置的
+- 基于Setter: 依赖关系是通过在bean上调用setter方法来设置的。
+- 字段: 依赖关系是使用反射注入的。
+
+> Spring团队建议基于构造器的注入，因为创建对象时会自动设置依赖项!
