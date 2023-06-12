@@ -195,3 +195,13 @@ Arrays.stream(context.getBeanDefinitionNames())
   - `Spring Beans` - Spring Framework 管理的对象。
   - `IoC container` - 管理beans的生命周期和依赖关系。
   - `Autowiring` - 连接SpringBean依赖项的过程。
+
+### 04. 比较 `@Component` 和 `@Bean`
+
+| 标题 | @Component    | @Bean                          |
+| -- |---------------|--------------------------------|
+| 在哪里使用 | 可以在任何Java类上使用 | 通常用于Spring Configuration类中的方法  |
+| 易用性 | 很简单，添加注解就可以了。 | 要编写所有的代码。                      |
+| 自动注入 | 字段、Setter或构造函数注入 | 方法调用或方法参数                      |
+| 谁创建的Beans | Spring Framework | 编写bean创建代码                     |
+| 推荐 | 您自己的应用程序实例化Bean `@Component` | 1:自定义业务逻辑 <br/>2:为第三方库实例化Bean:@Bean |
