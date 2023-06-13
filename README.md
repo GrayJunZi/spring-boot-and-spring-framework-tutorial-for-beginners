@@ -205,3 +205,5 @@ Arrays.stream(context.getBeanDefinitionNames())
 | 自动注入 | 字段、Setter或构造函数注入 | 方法调用或方法参数                      |
 | 谁创建的Beans | Spring Framework | 编写bean创建代码                     |
 | 推荐 | 您自己的应用程序实例化Bean `@Component` | 1:自定义业务逻辑 <br/>2:为第三方库实例化Bean:@Bean |
+
+### 05. 练习Spring Frmaework示例
