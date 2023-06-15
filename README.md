@@ -207,3 +207,35 @@ Arrays.stream(context.getBeanDefinitionNames())
 | 推荐 | 您自己的应用程序实例化Bean `@Component` | 1:自定义业务逻辑 <br/>2:为第三方库实例化Bean:@Bean |
 
 ### 05. 练习Spring Frmaework示例
+
+## 四、探索Spring Framework
+
+1. 惰性初始化(Lazy Initialization)
+2. Bean作用域
+3. PostConstruct 与 PreDestroy
+4. Jakarta EE
+5. Spring Big Picture
+6. Alternatives - @Component
+7. XML配置
+8. 上下文与依赖注入
+9. Spring模块与项目
+
+### 01. 探索Spring Beans的惰性初始化
+
+- Spring Beans的默认初始化: Eager
+- 推荐使用Eager初始化
+  - 在应用启动时可以立刻发现配置错误。
+- 可以将Beans配置为惰性初始化但不推荐而且也不常用。
+
+### 02. 比较懒加载与实时加载
+
+
+| 标题          | Lazy Initialization        | Eager Initialization          |
+|-------------|----------------------------|-------------------------------|
+| 初始化时间       | Bean在应用程序中首次使用时初始化         | Bean在应用程序启动时初始化               |
+| 默认          | 非默认                        | 默认                            |
+| 代码片段        | @Lazy 或者 @Lazy(value=true) | @Lazy(value=false) 或者 没有@Lazy |
+| 初始化错误时会发生什么 | 错误将导致运行时异常                 | 错误将阻止应用程序启动                   |
+| 使用          | 很少使用                       | 使用频率很高                        |
+| 内存消耗 | 更少                         | 所有Bean都在启动时初始化                |
+| 建议方案(recommended Scenario) | 如果Beans很少在应用中使用推荐使用        | 应用中有许多bean推荐使用                |
