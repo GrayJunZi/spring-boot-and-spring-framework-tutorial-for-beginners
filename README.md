@@ -229,7 +229,6 @@ Arrays.stream(context.getBeanDefinitionNames())
 
 ### 02. 比较懒加载与实时加载
 
-
 | 标题          | Lazy Initialization        | Eager Initialization          |
 |-------------|----------------------------|-------------------------------|
 | 初始化时间       | Bean在应用程序中首次使用时初始化         | Bean在应用程序启动时初始化               |
@@ -255,3 +254,14 @@ Spring Beans可以在特定作用域中使用：
 Java单例(GOF) vs Spring单例
 - Spring Singleton:每个Spring IOC容器一个对象实例。
 - Java Singleton(GOF):每个Java虚拟机有一个对象实例。
+
+### 04. 对比 Prototype与Singleton 作用域
+
+| 标题                         | Prototype                                               | Singleton                                                       |
+|----------------------------|---------------------------------------------------------|-----------------------------------------------------------------|
+| 实例                         | 在Spring IOC容器中可能有多个实例                                   | 在Spring IOC容器中只有一个实例                                            |
+| Beans                      | 每次引用bean时都创建一个新的实例                                      | 重用同一个Bean                                                       |
+| 默认                         | 非默认                                                     | 默认                                                              |
+| 代码片段                       | @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE) | @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)<br/>或默认 |
+| 使用                         | 很少使用                                                    | 使用频率很高                                                          |
+| 建议方案(recommended Scenario) | 有状态Bean                                                 | 无状态Bean                                                         |
