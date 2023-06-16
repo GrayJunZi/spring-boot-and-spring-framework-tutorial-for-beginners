@@ -239,3 +239,19 @@ Arrays.stream(context.getBeanDefinitionNames())
 | 使用          | 很少使用                       | 使用频率很高                        |
 | 内存消耗 | 更少                         | 所有Bean都在启动时初始化                |
 | 建议方案(recommended Scenario) | 如果Beans很少在应用中使用推荐使用        | 应用中有许多bean推荐使用                |
+
+### 03. Spring Framework 中 Bean作用域
+
+Spring Beans可以在特定作用域中使用：
+- Singleton - 在Spring IOC容器中只有一个实例。
+- Prototype - 在Spring IOC容器中可能有多个实例。
+
+作用域仅适用于Spring ApplicationContext：
+- Request - 每个HTTP请求一个对象实例。
+- Session - 每个用户HTTP Session一个对象实例。
+- Application - 每个Web应用程序运行时一个对象实例。
+- WebSocket - 每个WebSocket实例一个对象实例。
+
+Java单例(GOF) vs Spring单例
+- Spring Singleton:每个Spring IOC容器一个对象实例。
+- Java Singleton(GOF):每个Java虚拟机有一个对象实例。
