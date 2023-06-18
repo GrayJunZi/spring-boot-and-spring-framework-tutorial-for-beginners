@@ -277,3 +277,14 @@ Java单例(GOF) vs Spring单例
   - Qualifier
   - Scope
   - Singleton
+
+### 06. Spring XML 配置
+
+| 标题                      | Annotations | XML Configuration |
+|-------------------------|-------------|-------------------|
+| 易于使用                    | 很容易         | 麻烦(Cumbersome)    |
+| 短小精悍(short and concise) | 是           | 否                 |
+| 干净的 POJOs               | 否           | 是                 |
+| 易于维护                    | 是           | 否                 |
+| 使用频率                    | 几乎所有项目      | 很少                |
+| 调试困难                    | 困难          | 中等                |
