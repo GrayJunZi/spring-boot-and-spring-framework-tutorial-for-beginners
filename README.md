@@ -265,3 +265,15 @@ Java单例(GOF) vs Spring单例
 | 代码片段                       | @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE) | @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)<br/>或默认 |
 | 使用                         | 很少使用                                                    | 使用频率很高                                                          |
 | 建议方案(recommended Scenario) | 有状态Bean                                                 | 无状态Bean                                                         |
+
+### 05. Jakarta Contexts 和 依赖注入
+
+- Spring Framework v1 是在 2004 年发布的。
+- CDI规范于2009年12月引入Java EE6平台。
+- 现在称为Jakarta Contexts and Dependency Injection (CDI)
+- 重要的注入API特性
+  - Inject (Spring自动注入)
+  - Named (Spring组件
+  - Qualifier
+  - Scope
+  - Singleton
