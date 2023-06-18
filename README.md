@@ -338,3 +338,20 @@ Java单例(GOF) vs Spring单例
     - 你可以选择使用哪一个(你不需要使用所有的!)
   - 与时俱进:微服务和云
     - Spring Boot、Spring Cloud等!
+
+## 五、Spring Boot 入门
+
+- 为什么使用 Spring Boot？
+- Spring Boot 的目标是什么？
+- Spring Boot 是如何工作的？
+- 对比 Spring Boot、Spring MVC、Spring
+
+Spring 路径：
+- 创建Spring Boot 项目
+- 使用Spring Boot 构建简单的REST API
+- 理解Spring Boot 的MAGIC
+  - Spring Initializer
+  - Starter Projects
+  - Auto Configuration
+  - Developer Tools
+  - Actuator
