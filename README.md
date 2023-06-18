@@ -297,3 +297,44 @@ Java单例(GOF) vs Spring单例
     - @Service - 表示带注释的类具有业务逻辑。
     - @Controller - 表示带注释的类是一个“Controller”，(例如Web控制器)用于在Web应用程序和RESTAPI中定义。
     - @Repository - 表示使用带注释的类来检索和/或操作数据库中的数据。
+
+### 08. Spring 大概览 - Framework, Module 和 Projects
+
+- Spring核心：IOC容器、依赖注入、自动注入
+  - 这些是下列各项的基本组成部分
+    - 建立网络应用程序
+    - 创建RESTAPI
+    - 实现身份验证和授权
+    - 与数据库交互
+    - 与其他系统集成
+    - 编写出色的单元测试
+
+- Spring Framework 包含多个Spring模块
+  - 基本特性：核心(IOC容器、依赖注入、自动注入)
+  - Web：Spring MVC
+  - Web Reactive：Spring WebFlux
+  - 数据访问：JDBC、JPA等
+  - 集成：JMS等
+  - 测试：Mock Objects、Spring MVC Test等
+- Spring Modules
+- Spring Projects
+
+- Spring Projects的不断演进
+  - 第一个项目：Spring Framework
+  - Spring Security：保护您的Web应用程序或RESTAPI或微服务
+  - Spring Data：以同样的方式集成不同类型的数据库:关系型数据库与非关系型数据库。
+  - Spring Integration：通过与其他应用程序集成解决挑战
+  - Spring Boot：构建微服务的流行框架。
+  - Spring Cloud：构建云原生程序。
+
+- 为什么Spring生态系统这么流行？
+  - 松散耦合：Spring管理bean和依赖项的创建和连接
+    - 使构建松散合的应用程序变得容易
+    - 让编写单元测试变得简单!(Spring Unit Testing)
+  - 简化样板代码:专注于业务
+    - 例子:在每个方法中不需要异常处理!
+    - 将所有检查异常转换为运行时异常或未检查异常
+  - 架构灵活性:Spring模块和项目
+    - 你可以选择使用哪一个(你不需要使用所有的!)
+  - 与时俱进:微服务和云
+    - Spring Boot、Spring Cloud等!
