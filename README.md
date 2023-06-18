@@ -288,3 +288,12 @@ Java单例(GOF) vs Spring单例
 | 易于维护                    | 是           | 否                 |
 | 使用频率                    | 几乎所有项目      | 很少                |
 | 调试困难                    | 困难          | 中等                |
+
+### 07. Stereotype 注解
+
+- @Component - 适用于任何类的通用注解
+  - 所有原型注解的基础
+  - @Component 特殊化
+    - @Service - 表示带注释的类具有业务逻辑。
+    - @Controller - 表示带注释的类是一个“Controller”，(例如Web控制器)用于在Web应用程序和RESTAPI中定义。
+    - @Repository - 表示使用带注释的类来检索和/或操作数据库中的数据。
