@@ -378,3 +378,19 @@ Spring 路径：
 - 2: 使用 Spring Boot 构建简单的REST API
 
 ### 02. 创建 Hello World API
+
+- `@RestController` - 标记为控制器
+- `@RequestMapping` - 标记为接口
+
+### 03. Spring Boot 的重要目标是什么
+
+- 帮助您快速构建生产就绪型应用程序。
+  - 构建快速
+    - Spring Initializr
+    - Spring Boot Starter Projects
+    - Spring Boot Auto Configuration
+    - Spring Boot DevTools
+  - 易于制作
+    - 日志(Logging)
+    - 配置文件、配置属性的不同环境下的不同配置。
+    - 监控(Monitoring) Spring Boot Actuator
