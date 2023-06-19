@@ -355,3 +355,24 @@ Spring 路径：
   - Auto Configuration
   - Developer Tools
   - Actuator
+
+### 01. 使用 Spring Initalizr 创建 Spring Boot 项目
+
+打开 [spring initializr](https://start.spring.io) 网站 创建 Spring Boot 项目。
+
+> - `Project` -> Maven
+> - `Language` -> Java
+> - `Spring Boot` -> 3.1.0
+> - `Project Metadata`
+>   - `Group` -> com.grayjunzi
+>   - `Artifact` -> learn-spring-boot
+>   - `Name` -> learn-spring-boot
+>   - `Description` -> Demo project for Spring Boot
+>   - `Package name` -> com.grayjunzi.learn-spring-boot
+>   - `Packaging` -> Jar
+>   - `Java` -> 17
+> - `Dependencies`
+>   - `Spring Web`
+
+- 1: 创建 Spring Boot 项目
+- 2: 使用 Spring Boot 构建简单的REST API 
