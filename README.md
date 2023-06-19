@@ -394,3 +394,15 @@ Spring 路径：
     - 日志(Logging)
     - 配置文件、配置属性的不同环境下的不同配置。
     - 监控(Monitoring) Spring Boot Actuator
+
+### 04. Spring Boot Starter 项目
+
+- 如何将它们分组，使构建应用程序变得容易?
+  - 启动器:用于diff的方便的依赖描述符。特征
+
+- Spring Boot 提供多种入门程序
+  - Web应用和REST API: Spring Boot Starter Web(spring-webmvc, spring-web, spring-boot-starter-tomcat, spring-boot-starter-json)
+  - 单元测试: Spring Boot Starter Test
+  - 使用JPA与数据库交互: Spring Boot Starter Data JPA
+  - 使用JDBC与数据库交互: Spring Boot Starter JDBC
+  - 确保Web应用或REST API安全: Spring Boot Starter Security
