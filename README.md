@@ -406,3 +406,11 @@ Spring 路径：
   - 使用JPA与数据库交互: Spring Boot Starter Data JPA
   - 使用JDBC与数据库交互: Spring Boot Starter JDBC
   - 确保Web应用或REST API安全: Spring Boot Starter Security
+
+### 05. Spring Boot 自动配置
+
+- 自动配置: Spring Boot Starter Web
+  - Dispatcher Servlet(DispatcherServletAutoConfiguration)
+  - 内嵌Servlet容器 - Tomcat 是默认的(EmbeddedWebServerFactoryCustomizerAutoConfiguration)
+  - 默认错误页面(ErrorMvcAutoConfiguration)
+  - Json(JacksonHttpMessageConvertersConfiguration)
