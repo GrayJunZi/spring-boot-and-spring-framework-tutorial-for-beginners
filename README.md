@@ -375,4 +375,6 @@ Spring 路径：
 >   - `Spring Web`
 
 - 1: 创建 Spring Boot 项目
-- 2: 使用 Spring Boot 构建简单的REST API 
+- 2: 使用 Spring Boot 构建简单的REST API
+
+### 02. 创建 Hello World API
