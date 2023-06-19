@@ -414,3 +414,7 @@ Spring 路径：
   - 内嵌Servlet容器 - Tomcat 是默认的(EmbeddedWebServerFactoryCustomizerAutoConfiguration)
   - 默认错误页面(ErrorMvcAutoConfiguration)
   - Json(JacksonHttpMessageConvertersConfiguration)
+
+### 06. 使用Spring Boot DevTools加快构建速度
+
+- 支持热部署无需手动重启服务，增加生产效率。
