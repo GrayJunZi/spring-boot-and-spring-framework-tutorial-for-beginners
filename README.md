@@ -418,3 +418,21 @@ Spring 路径：
 ### 06. 使用Spring Boot DevTools加快构建速度
 
 - 支持热部署无需手动重启服务，增加生产效率。
+
+### 07. 构建生产就绪应用程序 1 Profiles
+
+使用配置文件管理应用程序配置。
+
+- 应用程序有不同的环境: Dev, QA, Stage, Prod 等
+- 不同的环境需要不同的配置。
+  - 不同的数据库。
+  - 不同的Web服务。
+- Profiles: 提供特定与环境的配置。
+
+多种日志级别:
+- trace
+- debug
+- info
+- warning
+- error
+- off
