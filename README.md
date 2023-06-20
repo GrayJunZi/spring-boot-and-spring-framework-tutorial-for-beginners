@@ -482,3 +482,12 @@ maven clean install
 ```java
 java -jar learn-spring-boot-0.0.1-SNAPSHOT.jar
 ```
+
+### 10. 使用Spring Boot监控应用程序
+
+- 监控和管理生产中的应用程序。
+- 提供大量的端点(endpoint):
+  - beans - 应用程序中Spring bean的完整列表
+  - health - 应用程序运行状况信息
+  - metrics - 应用程序指标
+  - mappings - 请求映射的详细信息
