@@ -491,3 +491,18 @@ java -jar learn-spring-boot-0.0.1-SNAPSHOT.jar
   - health - 应用程序运行状况信息
   - metrics - 应用程序指标
   - mappings - 请求映射的详细信息
+
+### 11. Spring Boot、Spring MVC、Spring 对比
+
+- Spring Framework: 依赖注入
+  - @Component, @Autowired, @ComponentScan
+- Spring MVC: 简化Web应用和REST API的构建
+  - @Controller, @RestController, @RequestMapping
+- Spring Boot: 快速构建生产级应用
+  - Starter Projects - 轻松构建各种应用程序
+  - 自动配置
+  - 启用非功能性需求(NFRs):
+    - Actuator: 启用应用程序的高级监控
+    - Embedded Server: 不需要单独的应用服务器
+    - 日志和错误处理
+    - 配置文件
