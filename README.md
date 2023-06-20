@@ -5,13 +5,16 @@ Master Spring Boot 3 & Spring Framework 6 with Java
 成为Java Spring Boot全栈云开发人员。学习React，Docker，Spring Data JPA和Spring Security。
 
 ## 一、介绍
+
 ### 入门 (Getting Started)
 
 当今Java世界中最顶级的两个框架为：
+
 - Spring Boot
 - Spring Framework
 
 学习难点为：
+
 - 大量技术点: 依赖注入、控制反转、自动布线(Auto wiring)、自动配置、 启动项目...
 - 多种应用：Web应用、REST API、全站
 - 将框架与各种其他框架工具集成：Maven、Gradle、Spring Data、JPA、Hibernate、Docker
@@ -49,18 +52,18 @@ Spring框架提供了构建易于维护的应用程序所需的最重要特性: 
 设计Game Runner运行游戏 (Mario,SuperContra,Pacman等)的迭代方法:
 
 - 选代1:紧耦合Java代码
-  - GameRunner类
-    - 游戏类:马里奥，SuperContra，吃豆人等
+    - GameRunner类
+        - 游戏类:马里奥，SuperContra，吃豆人等
 - 选代2:松耦合-接口
-  - GameRunner类
-  - 游戏控制台接口
-    - 游戏类:马里奥、超级魂斗罗、吃豆人
+    - GameRunner类
+    - 游戏控制台接口
+        - 游戏类:马里奥、超级魂斗罗、吃豆人
 - 选代3:松耦合 - Spring Level 1
-  - Spring Beans  
-  - Spring框架将管理对象和管理布线
+    - Spring Beans
+    - Spring框架将管理对象和管理布线
 - 选代4:松耦合 - Spring Level 2
-  - Spring Annotations
-  - Spring框架将创建、管理和自动连接对象
+    - Spring Annotations
+    - Spring框架将创建、管理和自动连接对象
 
 ### 02. 创建 Spring Framework 项目
 
@@ -70,7 +73,8 @@ Spring框架提供了构建易于维护的应用程序所需的最重要特性: 
 > - `Language` -> Java
 > - `Spring Boot` -> 3.1.0
 > - `Project Metadata`
->   - `Group` -> com.grayjunzi
+    >
+- `Group` -> com.grayjunzi
 >   - `Artifact` -> learn-spring-framework
 >   - `Name` -> learn-spring-framework
 >   - `Description` -> Demo project for Spring Boot
@@ -83,6 +87,7 @@ Spring框架提供了构建易于维护的应用程序所需的最重要特性: 
 设计 GameRunner 游戏 (Mario, SuperContra, Pacman 等)
 
 紧耦合代码:
+
 - GamRunner 类
 - Game 类: Mario, SuperContra, Pacman 等。
 
@@ -93,9 +98,9 @@ Spring框架提供了构建易于维护的应用程序所需的最重要特性: 
 在构建伟大的软件时，耦合甚至更为重要。
 
 - 科技中唯一不变的就是变化
-  - 业务需求变化
-  - 框架变化
-  - 代码更改
+    - 业务需求变化
+    - 框架变化
+    - 代码更改
 - 我们希望尽可能的松耦合。
 - 我们希望用尽可能少的代码更改来进行功能更改。
 
@@ -104,9 +109,10 @@ Spring框架提供了构建易于维护的应用程序所需的最重要特性: 
 ### 05. 引入Java接口使应用程序实现松耦合
 
 松耦合代码：
+
 - GameRunner 类
 - GamingConsole 接口
-  - Game 实现类: Mario, SuperContra, Pacman 等。
+    - Game 实现类: Mario, SuperContra, Pacman 等。
 
 ### 06. 引入Spring框架使Java应用程序实现松拥合
 
@@ -120,7 +126,7 @@ Spring框架提供了构建易于维护的应用程序所需的最重要特性: 
 
 #### record
 
-`record` 是一个新功能，它是在JDK 16中引入的，通常我们创建Java类是时需要创建许多 getter、setter、构造函数、equals、hashcode 等， 
+`record` 是一个新功能，它是在JDK 16中引入的，通常我们创建Java类是时需要创建许多 getter、setter、构造函数、equals、hashcode 等，
 然而，当使用`record`时可消除创建Java Bean的冗长，它们是自动创建的。
 
 ### 09. 使用 Spring Framework 实现自动装配
@@ -138,27 +144,28 @@ Spring框架提供了构建易于维护的应用程序所需的最重要特性: 
 - `Spring Container` - Spring容器是管理Spring Bean及其生命周期(lifecycle)的容器。
 - `Bean Factory` - 是最基本的Spring容器。
 - `Application Context` - 是高级 Spring容器 企业特有的功能。
-  - web应用程序更易于使用。
-  - 易于国际化。
-  - 易于Spring AOP集成。
+    - web应用程序更易于使用。
+    - 易于国际化。
+    - 易于Spring AOP集成。
 
 #### Java Bean 与 Spring Bean 有什么区别？
 
 - Java Bean: 类遵循3个约束
-  1. 具有公共默认 (无参数)造函数
-  2. 允许使用getter和setter方法访问它们的属性
-  3. 实现java.io.Serializable
-  
+    1. 具有公共默认 (无参数)造函数
+    2. 允许使用getter和setter方法访问它们的属性
+    3. 实现java.io.Serializable
+
 - POJO: 普通的旧Java对象
-  1. 没有限制
-  2. 任何Java对象都是一个POJO
+    1. 没有限制
+    2. 任何Java对象都是一个POJO
 
 - Spring Bean: 任何被Spring管理的Java对象都是 SpringBean。
-  1. Spring使用IOC容器(Bean Factory or Application Context)来管理这些对象。
+    1. Spring使用IOC容器(Bean Factory or Application Context)来管理这些对象。
 
 #### 如何列出Spring框架管理的所有Bean
 
 调用方法 `context.getBeanDefinitionNames()` 获取IOC容器中所有的对象名称。
+
 ```java
 Arrays.stream(context.getBeanDefinitionNames())
         .forEach(System.out::println);
@@ -176,6 +183,7 @@ Arrays.stream(context.getBeanDefinitionNames())
 
 - `@Primary` - 当多个候选人(candidates)都符合条件时，其中一个有@Primary则应该优先考虑该bean。
 - `@Qualifier` - 一个特定的bean应该是自动注入(auto-wired)的 (这个bean的名字可以用作限定符)。
+
 > `@Qualifier` 的优先级高于 `@Primary`。
 
 ### 02. 不同类型的依赖注入
@@ -192,19 +200,19 @@ Arrays.stream(context.getBeanDefinitionNames())
 - `Dependency` - 指定实现类。
 - `Component Scan` - 扫描组件类。
 - `Dependency Injection` - 识别beans，它们的依赖关系，并将它们连接在一起(提供I0C-控制反转)
-  - `Spring Beans` - Spring Framework 管理的对象。
-  - `IoC container` - 管理beans的生命周期和依赖关系。
-  - `Autowiring` - 连接SpringBean依赖项的过程。
+    - `Spring Beans` - Spring Framework 管理的对象。
+    - `IoC container` - 管理beans的生命周期和依赖关系。
+    - `Autowiring` - 连接SpringBean依赖项的过程。
 
 ### 04. 比较 `@Component` 和 `@Bean`
 
-| 标题 | @Component    | @Bean                          |
-| -- |---------------|--------------------------------|
-| 在哪里使用 | 可以在任何Java类上使用 | 通常用于Spring Configuration类中的方法  |
-| 易用性 | 很简单，添加注解就可以了。 | 要编写所有的代码。                      |
-| 自动注入 | 字段、Setter或构造函数注入 | 方法调用或方法参数                      |
-| 谁创建的Beans | Spring Framework | 编写bean创建代码                     |
-| 推荐 | 您自己的应用程序实例化Bean `@Component` | 1:自定义业务逻辑 <br/>2:为第三方库实例化Bean:@Bean |
+| 标题        | @Component                   | @Bean                               |
+|-----------|------------------------------|-------------------------------------|
+| 在哪里使用     | 可以在任何Java类上使用                | 通常用于Spring Configuration类中的方法       |
+| 易用性       | 很简单，添加注解就可以了。                | 要编写所有的代码。                           |
+| 自动注入      | 字段、Setter或构造函数注入             | 方法调用或方法参数                           |
+| 谁创建的Beans | Spring Framework             | 编写bean创建代码                          |
+| 推荐        | 您自己的应用程序实例化Bean `@Component` | 1:自定义业务逻辑 <br/>2:为第三方库实例化Bean:@Bean |
 
 ### 05. 练习Spring Frmaework示例
 
@@ -224,34 +232,37 @@ Arrays.stream(context.getBeanDefinitionNames())
 
 - Spring Beans的默认初始化: Eager
 - 推荐使用Eager初始化
-  - 在应用启动时可以立刻发现配置错误。
+    - 在应用启动时可以立刻发现配置错误。
 - 可以将Beans配置为惰性初始化但不推荐而且也不常用。
 
 ### 02. 比较懒加载与实时加载
 
-| 标题          | Lazy Initialization        | Eager Initialization          |
-|-------------|----------------------------|-------------------------------|
-| 初始化时间       | Bean在应用程序中首次使用时初始化         | Bean在应用程序启动时初始化               |
-| 默认          | 非默认                        | 默认                            |
-| 代码片段        | @Lazy 或者 @Lazy(value=true) | @Lazy(value=false) 或者 没有@Lazy |
-| 初始化错误时会发生什么 | 错误将导致运行时异常                 | 错误将阻止应用程序启动                   |
-| 使用          | 很少使用                       | 使用频率很高                        |
-| 内存消耗 | 更少                         | 所有Bean都在启动时初始化                |
+| 标题                         | Lazy Initialization        | Eager Initialization          |
+|----------------------------|----------------------------|-------------------------------|
+| 初始化时间                      | Bean在应用程序中首次使用时初始化         | Bean在应用程序启动时初始化               |
+| 默认                         | 非默认                        | 默认                            |
+| 代码片段                       | @Lazy 或者 @Lazy(value=true) | @Lazy(value=false) 或者 没有@Lazy |
+| 初始化错误时会发生什么                | 错误将导致运行时异常                 | 错误将阻止应用程序启动                   |
+| 使用                         | 很少使用                       | 使用频率很高                        |
+| 内存消耗                       | 更少                         | 所有Bean都在启动时初始化                |
 | 建议方案(recommended Scenario) | 如果Beans很少在应用中使用推荐使用        | 应用中有许多bean推荐使用                |
 
 ### 03. Spring Framework 中 Bean作用域
 
 Spring Beans可以在特定作用域中使用：
+
 - Singleton - 在Spring IOC容器中只有一个实例。
 - Prototype - 在Spring IOC容器中可能有多个实例。
 
 作用域仅适用于Spring ApplicationContext：
+
 - Request - 每个HTTP请求一个对象实例。
 - Session - 每个用户HTTP Session一个对象实例。
 - Application - 每个Web应用程序运行时一个对象实例。
 - WebSocket - 每个WebSocket实例一个对象实例。
 
 Java单例(GOF) vs Spring单例
+
 - Spring Singleton:每个Spring IOC容器一个对象实例。
 - Java Singleton(GOF):每个Java虚拟机有一个对象实例。
 
@@ -272,11 +283,11 @@ Java单例(GOF) vs Spring单例
 - CDI规范于2009年12月引入Java EE6平台。
 - 现在称为Jakarta Contexts and Dependency Injection (CDI)
 - 重要的注入API特性
-  - Inject (Spring自动注入)
-  - Named (Spring组件
-  - Qualifier
-  - Scope
-  - Singleton
+    - Inject (Spring自动注入)
+    - Named (Spring组件
+    - Qualifier
+    - Scope
+    - Singleton
 
 ### 06. Spring XML 配置
 
@@ -292,52 +303,52 @@ Java单例(GOF) vs Spring单例
 ### 07. Stereotype 注解
 
 - @Component - 适用于任何类的通用注解
-  - 所有原型注解的基础
-  - @Component 特殊化
-    - @Service - 表示带注释的类具有业务逻辑。
-    - @Controller - 表示带注释的类是一个“Controller”，(例如Web控制器)用于在Web应用程序和RESTAPI中定义。
-    - @Repository - 表示使用带注释的类来检索和/或操作数据库中的数据。
+    - 所有原型注解的基础
+    - @Component 特殊化
+        - @Service - 表示带注释的类具有业务逻辑。
+        - @Controller - 表示带注释的类是一个“Controller”，(例如Web控制器)用于在Web应用程序和RESTAPI中定义。
+        - @Repository - 表示使用带注释的类来检索和/或操作数据库中的数据。
 
 ### 08. Spring 大概览 - Framework, Module 和 Projects
 
 - Spring核心：IOC容器、依赖注入、自动注入
-  - 这些是下列各项的基本组成部分
-    - 建立网络应用程序
-    - 创建RESTAPI
-    - 实现身份验证和授权
-    - 与数据库交互
-    - 与其他系统集成
-    - 编写出色的单元测试
+    - 这些是下列各项的基本组成部分
+        - 建立网络应用程序
+        - 创建RESTAPI
+        - 实现身份验证和授权
+        - 与数据库交互
+        - 与其他系统集成
+        - 编写出色的单元测试
 
 - Spring Framework 包含多个Spring模块
-  - 基本特性：核心(IOC容器、依赖注入、自动注入)
-  - Web：Spring MVC
-  - Web Reactive：Spring WebFlux
-  - 数据访问：JDBC、JPA等
-  - 集成：JMS等
-  - 测试：Mock Objects、Spring MVC Test等
+    - 基本特性：核心(IOC容器、依赖注入、自动注入)
+    - Web：Spring MVC
+    - Web Reactive：Spring WebFlux
+    - 数据访问：JDBC、JPA等
+    - 集成：JMS等
+    - 测试：Mock Objects、Spring MVC Test等
 - Spring Modules
 - Spring Projects
 
 - Spring Projects的不断演进
-  - 第一个项目：Spring Framework
-  - Spring Security：保护您的Web应用程序或RESTAPI或微服务
-  - Spring Data：以同样的方式集成不同类型的数据库:关系型数据库与非关系型数据库。
-  - Spring Integration：通过与其他应用程序集成解决挑战
-  - Spring Boot：构建微服务的流行框架。
-  - Spring Cloud：构建云原生程序。
+    - 第一个项目：Spring Framework
+    - Spring Security：保护您的Web应用程序或RESTAPI或微服务
+    - Spring Data：以同样的方式集成不同类型的数据库:关系型数据库与非关系型数据库。
+    - Spring Integration：通过与其他应用程序集成解决挑战
+    - Spring Boot：构建微服务的流行框架。
+    - Spring Cloud：构建云原生程序。
 
 - 为什么Spring生态系统这么流行？
-  - 松散耦合：Spring管理bean和依赖项的创建和连接
-    - 使构建松散合的应用程序变得容易
-    - 让编写单元测试变得简单!(Spring Unit Testing)
-  - 简化样板代码:专注于业务
-    - 例子:在每个方法中不需要异常处理!
-    - 将所有检查异常转换为运行时异常或未检查异常
-  - 架构灵活性:Spring模块和项目
-    - 你可以选择使用哪一个(你不需要使用所有的!)
-  - 与时俱进:微服务和云
-    - Spring Boot、Spring Cloud等!
+    - 松散耦合：Spring管理bean和依赖项的创建和连接
+        - 使构建松散合的应用程序变得容易
+        - 让编写单元测试变得简单!(Spring Unit Testing)
+    - 简化样板代码:专注于业务
+        - 例子:在每个方法中不需要异常处理!
+        - 将所有检查异常转换为运行时异常或未检查异常
+    - 架构灵活性:Spring模块和项目
+        - 你可以选择使用哪一个(你不需要使用所有的!)
+    - 与时俱进:微服务和云
+        - Spring Boot、Spring Cloud等!
 
 ## 五、Spring Boot 入门
 
@@ -347,14 +358,15 @@ Java单例(GOF) vs Spring单例
 - 对比 Spring Boot、Spring MVC、Spring
 
 Spring 路径：
+
 - 创建Spring Boot 项目
 - 使用Spring Boot 构建简单的REST API
 - 理解Spring Boot 的MAGIC
-  - Spring Initializer
-  - Starter Projects
-  - Auto Configuration
-  - Developer Tools
-  - Actuator
+    - Spring Initializer
+    - Starter Projects
+    - Auto Configuration
+    - Developer Tools
+    - Actuator
 
 ### 01. 使用 Spring Initalizr 创建 Spring Boot 项目
 
@@ -364,7 +376,8 @@ Spring 路径：
 > - `Language` -> Java
 > - `Spring Boot` -> 3.1.0
 > - `Project Metadata`
->   - `Group` -> com.grayjunzi
+    >
+- `Group` -> com.grayjunzi
 >   - `Artifact` -> learn-spring-boot
 >   - `Name` -> learn-spring-boot
 >   - `Description` -> Demo project for Spring Boot
@@ -372,7 +385,8 @@ Spring 路径：
 >   - `Packaging` -> Jar
 >   - `Java` -> 17
 > - `Dependencies`
->   - `Spring Web`
+    >
+- `Spring Web`
 
 - 1: 创建 Spring Boot 项目
 - 2: 使用 Spring Boot 构建简单的REST API
@@ -385,35 +399,36 @@ Spring 路径：
 ### 03. Spring Boot 的重要目标是什么
 
 - 帮助您快速构建生产就绪型应用程序。
-  - 构建快速
-    - Spring Initializr
-    - Spring Boot Starter Projects
-    - Spring Boot Auto Configuration
-    - Spring Boot DevTools
-  - 易于制作
-    - 日志(Logging)
-    - 配置文件、配置属性的不同环境下的不同配置。
-    - 监控(Monitoring) Spring Boot Actuator
+    - 构建快速
+        - Spring Initializr
+        - Spring Boot Starter Projects
+        - Spring Boot Auto Configuration
+        - Spring Boot DevTools
+    - 易于制作
+        - 日志(Logging)
+        - 配置文件、配置属性的不同环境下的不同配置。
+        - 监控(Monitoring) Spring Boot Actuator
 
 ### 04. Spring Boot Starter 项目
 
 - 如何将它们分组，使构建应用程序变得容易?
-  - 启动器:用于diff的方便的依赖描述符。特征
+    - 启动器:用于diff的方便的依赖描述符。特征
 
 - Spring Boot 提供多种入门程序
-  - Web应用和REST API: Spring Boot Starter Web(spring-webmvc, spring-web, spring-boot-starter-tomcat, spring-boot-starter-json)
-  - 单元测试: Spring Boot Starter Test
-  - 使用JPA与数据库交互: Spring Boot Starter Data JPA
-  - 使用JDBC与数据库交互: Spring Boot Starter JDBC
-  - 确保Web应用或REST API安全: Spring Boot Starter Security
+    - Web应用和REST API: Spring Boot Starter Web(spring-webmvc, spring-web, spring-boot-starter-tomcat,
+      spring-boot-starter-json)
+    - 单元测试: Spring Boot Starter Test
+    - 使用JPA与数据库交互: Spring Boot Starter Data JPA
+    - 使用JDBC与数据库交互: Spring Boot Starter JDBC
+    - 确保Web应用或REST API安全: Spring Boot Starter Security
 
 ### 05. Spring Boot 自动配置
 
 - 自动配置: Spring Boot Starter Web
-  - Dispatcher Servlet(DispatcherServletAutoConfiguration)
-  - 内嵌Servlet容器 - Tomcat 是默认的(EmbeddedWebServerFactoryCustomizerAutoConfiguration)
-  - 默认错误页面(ErrorMvcAutoConfiguration)
-  - Json(JacksonHttpMessageConvertersConfiguration)
+    - Dispatcher Servlet(DispatcherServletAutoConfiguration)
+    - 内嵌Servlet容器 - Tomcat 是默认的(EmbeddedWebServerFactoryCustomizerAutoConfiguration)
+    - 默认错误页面(ErrorMvcAutoConfiguration)
+    - Json(JacksonHttpMessageConvertersConfiguration)
 
 ### 06. 使用Spring Boot DevTools加快构建速度
 
@@ -425,11 +440,12 @@ Spring 路径：
 
 - 应用程序有不同的环境: Dev, QA, Stage, Prod 等
 - 不同的环境需要不同的配置。
-  - 不同的数据库。
-  - 不同的Web服务。
+    - 不同的数据库。
+    - 不同的Web服务。
 - Profiles: 提供特定与环境的配置。
 
 多种日志级别:
+
 - trace
 - debug
 - info
@@ -438,3 +454,31 @@ Spring 路径：
 - off
 
 ### 08. 构建生产就绪应用程序 2 ConfigurationProperties
+
+### 09. 使用Spring Boot嵌入式服务器(Embedded Servers)简化部署
+
+传统部署应用程序流程为:
+
+- 步骤1: 安装Java
+- 步骤2: 安装Web应用服务器（Tomcat/WebSphere/WebLogic等）
+- 步骤3: 部署WAR(Web ARchive)应用程序
+
+嵌入式服务器是一种更为简单的选择:
+
+- 步骤1: 安装Java
+- 步骤2: 运行JAR文件。
+
+嵌入式服务器其他实例:
+- spring-boot-starter-tomcat
+- spring-boot-starter-jetty
+- spring-boot-starter-undertow
+
+在 `IDEA` 中打开 `Execute Maven Goal` 窗口输入命令:
+```
+maven clean install
+```
+
+运行JAR文件
+```java
+java -jar learn-spring-boot-0.0.1-SNAPSHOT.jar
+```
