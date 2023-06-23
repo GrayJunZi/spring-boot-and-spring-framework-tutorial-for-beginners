@@ -533,3 +533,17 @@ java -jar learn-spring-boot-0.0.1-SNAPSHOT.jar
 >   - `Spring Data JDBC`
 >   - `Spring Data JPA`
 >   - `H2 Database`
+
+### 02. 启用H2控制台并创建表
+
+在 `application.properties` 添加配置
+```properties
+# 启用H2控制台
+spring.h2.console.enabled=true
+# 固定数据源url
+spring.datasource.url=jdbc:h2:mem:testdb
+```
+
+在 `resources` 文件夹下添加sql文件，将会在程序启动时自动执行。
+
+打开 `http://localhost:8080/h2-console` h2控制台，并使用数据源url连接。
