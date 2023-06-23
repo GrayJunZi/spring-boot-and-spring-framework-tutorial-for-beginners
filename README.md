@@ -69,18 +69,17 @@ Spring框架提供了构建易于维护的应用程序所需的最重要特性: 
 
 我们可以使用引导程序 [start.spring.io](https://start.spring.io) 创建一个新的项目。
 
-> - `Project` -> Maven
-> - `Language` -> Java
-> - `Spring Boot` -> 3.1.0
+> - `Project` : Maven
+> - `Language` : Java
+> - `Spring Boot` : 3.1.0
 > - `Project Metadata`
-    >
-- `Group` -> com.grayjunzi
->   - `Artifact` -> learn-spring-framework
->   - `Name` -> learn-spring-framework
->   - `Description` -> Demo project for Spring Boot
->   - `Package name` -> com.grayjunzi.learn-spring-framework
->   - `Packaging` -> Jar
->   - `Java` -> 17
+>   - `Group` : com.grayjunzi
+>   - `Artifact` : learn-spring-framework
+>   - `Name` : learn-spring-framework
+>   - `Description` : Demo project for Spring Boot
+>   - `Package name` : com.grayjunzi.learn-spring-framework
+>   - `Packaging` : Jar
+>   - `Java` : 17
 
 ### 03. Java游戏应用程序入门
 
@@ -372,21 +371,18 @@ Spring 路径：
 
 打开 [spring initializr](https://start.spring.io) 网站 创建 Spring Boot 项目。
 
-> - `Project` -> Maven
-> - `Language` -> Java
-> - `Spring Boot` -> 3.1.0
+> - `Project` : Maven
+> - `Language` : Java
+> - `Spring Boot` : 3.1.0
 > - `Project Metadata`
-    >
-- `Group` -> com.grayjunzi
->   - `Artifact` -> learn-spring-boot
->   - `Name` -> learn-spring-boot
->   - `Description` -> Demo project for Spring Boot
->   - `Package name` -> com.grayjunzi.learn-spring-boot
->   - `Packaging` -> Jar
->   - `Java` -> 17
-> - `Dependencies`
-    >
-- `Spring Web`
+> - `Group` : com.grayjunzi
+>   - `Artifact` : learn-spring-boot
+>   - `Name` : learn-spring-boot
+>   - `Description` : Demo project for Spring Boot
+>   - `Package name` : com.grayjunzi.learn-spring-boot
+>   - `Packaging` : Jar
+>   - `Java` : 17
+> - `Dependencies` : `Spring Web`
 
 - 1: 创建 Spring Boot 项目
 - 2: 使用 Spring Boot 构建简单的REST API
@@ -506,3 +502,34 @@ java -jar learn-spring-boot-0.0.1-SNAPSHOT.jar
     - Embedded Server: 不需要单独的应用服务器
     - 日志和错误处理
     - 配置文件
+
+## 六、JAP与Hibernate
+
+使用现代Spring引导方法构建一个简单的JPA应用程序。
+
+- 01: 使用H2创建一个Spring Boot项目
+- 02: 创建 Course 表
+- 03: 使用Spring JDBC处理 Course 表
+- 04: 使用JPA和Hibernate去处理 Course 表
+- 05: 使用Spring Data JPA 去处理 Course 表
+
+### 01. 创建 JPA和Hibernate项目
+
+打开 [spring initializr](https://start.spring.io) 网站 创建 Spring Boot 项目。
+
+> - `Project` : Maven
+> - `Language` : Java
+> - `Spring Boot` : 3.1.1
+> - `Project Metadata`
+>   - `Group` : com.grayjunzi
+>   - `Artifact` : learn-jpa-and-hibernate
+>   - `Name` : learn-jpa-and-hibernate
+>   - `Description` : Demo project for Spring Boot
+>   - `Package name` : com.grayjunzi.learn-jpa-and-hibernate
+>   - `Packaging` : Jar
+>   - `Java` : 17
+> - `Dependencies` 
+>   - `Spring Web`
+>   - `Spring Data JDBC`
+>   - `Spring Data JPA`
+>   - `H2 Database`
