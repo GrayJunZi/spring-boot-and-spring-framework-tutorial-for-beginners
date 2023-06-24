@@ -574,3 +574,7 @@ delete from course where id = 1
   - 编写大量SQL查询以及Java代码
 - Spring JDBC
   - 编写大量SQL查询以及少量Java代码
+
+### 04. 使用Spring JDBC插入数据
+
+使用 `JdbcTemplate` 执行SQL语句，继承 `CommandLineRunner` 并重写`run`方法，程序运行时将自动运行`run`方法 ，可在`run`方法中执行添加操作。
