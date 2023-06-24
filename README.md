@@ -547,3 +547,30 @@ spring.datasource.url=jdbc:h2:mem:testdb
 在 `resources` 文件夹下添加sql文件，将会在程序启动时自动执行。
 
 打开 `http://localhost:8080/h2-console` h2控制台，并使用数据源url连接。
+
+### 03. Spring JDBC 入门
+
+#### SQL 基本命令
+
+插入数据
+```sql
+insert into course (id, name, author)
+values (1, 'Learn AWS', 'grayjunzi')
+```
+
+查看数据
+```sql
+select * from course
+```
+
+删除数据
+```sql
+delete from course where id = 1
+```
+
+#### JDBC 到 Spring JDBC
+
+- JDBC
+  - 编写大量SQL查询以及Java代码
+- Spring JDBC
+  - 编写大量SQL查询以及少量Java代码
