@@ -580,3 +580,6 @@ delete from course where id = 1
 使用 `JdbcTemplate` 执行SQL语句，继承 `CommandLineRunner` 并重写`run`方法，程序运行时将自动运行`run`方法 ，可在`run`方法中执行添加操作。
 
 ### 05. 使用Spring JDBC插入和删除数据
+
+### 06. 使用Spring JDBC查询数据
+
