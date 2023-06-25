@@ -1,5 +1,6 @@
 package com.grayjunzi.learnjpaandhibernate.course.jdbc;
 
+import com.grayjunzi.learnjpaandhibernate.course.Course;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -12,6 +13,10 @@ public class CourseJDBCCommandLineRunner implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        repository.insert();
+        repository.insert(new Course(1,"Learn AWS", "grayjunzi"));
+        repository.insert(new Course(2,"Learn Azure", "grayjunzi"));
+        repository.insert(new Course(3,"Learn DevOps", "grayjunzi"));
+
+        repository.deleteById(2);
     }
 }
