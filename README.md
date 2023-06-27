@@ -591,3 +591,29 @@ delete from course where id = 1
 ### 07. JPA与EntityManager
 
 ### 08. Spring Data JPA
+
+## 七、使用Spring Boot构建Web应用
+
+- Web应用概念(浏览器、HTML、CSS、请求、响应、表单、会话、认证)
+- Spring MVC(Dispatcher Servlet、View Resolvers、Model、View、Controller、Validations)
+- Spring Boot(Starters, Auto Configuration)
+- 框架/工具 (JSP、JSTL、JPA、Bootstrap、Spring Security、MySQL、H2)
+
+### 01. 创建Web应用程序
+
+打开 [spring initializr](https://start.spring.io) 网站 创建 Spring Boot 项目。
+
+> - `Project` : Maven
+> - `Language` : Java
+> - `Spring Boot` : 3.1.1
+> - `Project Metadata`
+>  - `Group` : com.grayjunzi
+>  - `Artifact` : my-first-web-app
+>  - `Name` : my-first-web-app
+>  - `Description` : Demo project for Spring Boot
+>  - `Package name` : com.grayjunzi.my-first-web-app
+>  - `Packaging` : Jar
+>  - `Java` : 20
+> - `Dependencies`
+>   - `Spring Web`
+>   - `Spring Boot DevTools`
