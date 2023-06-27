@@ -568,12 +568,17 @@ select * from course
 delete from course where id = 1
 ```
 
-#### JDBC 到 Spring JDBC
+#### JDBC 到 Spring JDBC 再到 Spring Data JPA 
 
 - JDBC
   - 编写大量SQL查询以及Java代码
 - Spring JDBC
   - 编写大量SQL查询以及少量Java代码
+- JPA
+  - 不用担心查询
+  - 只需要将实体映射到表
+- Spring Data JPA
+  - 不需要担心任何东西
 
 ### 04. 使用Spring JDBC插入数据
 
@@ -585,3 +590,4 @@ delete from course where id = 1
 
 ### 07. JPA与EntityManager
 
+### 08. Spring Data JPA
