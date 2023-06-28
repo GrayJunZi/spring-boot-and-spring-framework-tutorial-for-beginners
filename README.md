@@ -617,3 +617,5 @@ delete from course where id = 1
 > - `Dependencies`
 >   - `Spring Web`
 >   - `Spring Boot DevTools`
+
+### 02. Spring MVC 控制器提供HTML响应
