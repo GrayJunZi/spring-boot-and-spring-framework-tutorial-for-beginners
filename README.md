@@ -619,3 +619,8 @@ delete from course where id = 1
 >   - `Spring Boot DevTools`
 
 ### 02. Spring MVC 控制器提供HTML响应
+
+### 03. 重定向到JSP
+
+- 在 `src/main/resources/` 文件下创建 `META-INF/resources/WEB-INF/jsp` 文件夹。
+- 在 `jsp` 文件夹下创建 `sayHello.jsp` 文件。
