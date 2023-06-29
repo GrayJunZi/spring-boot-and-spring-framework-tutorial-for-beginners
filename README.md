@@ -636,3 +636,45 @@ Web是如何工作的？
 - 浏览器发送一个请求 HTTP Request。
 - 服务器处理这个请求。
 - 服务器返回一个响应 HTTP Response。
+
+### 05. 使用 RequestParam 捕获 QueryParams
+
+控制器方法接收注解参数 `@RequestParam` 
+
+```java
+@Controller
+public class LoginController {
+    @RequestMapping("login")
+    public String login(@RequestParam String name) {
+        return "login";
+    }
+}
+```
+
+使用 `ModelMap` 设置参数，传入jsp中。
+
+```java
+@Controller
+public class LoginController {
+
+    @RequestMapping("login")
+    public String login(@RequestParam String name, ModelMap model) {
+        model.put("name",name);
+        System.out.println("Request Param is "  + name);
+        return "login";
+    }
+}
+```
+
+```html
+<html>
+    <head>
+        <title>Login Page</title>
+    </head>
+    <body>
+        Welcome to the Login Page!
+    
+        ${name}
+    </body>
+</html>
+```
