@@ -624,3 +624,15 @@ delete from course where id = 1
 
 - 在 `src/main/resources/` 文件下创建 `META-INF/resources/WEB-INF/jsp` 文件夹。
 - 在 `jsp` 文件夹下创建 `sayHello.jsp` 文件。
+
+### 04. 登录控制器
+
+- `@Controller` - 标记为控制器
+- `@RequestMapping('login')` - 指定映射路由
+- `@ResponseBody` - 指定响应消息体，若未写此注解则查找jsp页面。
+
+Web是如何工作的？
+
+- 浏览器发送一个请求 HTTP Request。
+- 服务器处理这个请求。
+- 服务器返回一个响应 HTTP Response。
