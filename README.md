@@ -707,3 +707,10 @@ logger.debug("Log {}", "Test info");
 logger.debug("Log {}", "Test warn");
 logger.error("Log {}", "Test error");
 ```
+
+### 07. 了解 DispatcherServlet、Model 1、Model 2 和 FrontController
+
+- Model 1: 所有代码都在JSP页面中。
+- Model 2: 关注点分离(MVC) Servlet + JSP。
+- FrontController: 所有请求先经过FrontController再转发给正确的控制器或服务。
+- Dispatcher Servlet: 接收HTTP请求、处理HTTP请求、返回HTTP响应。
