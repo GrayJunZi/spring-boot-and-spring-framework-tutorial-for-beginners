@@ -678,3 +678,32 @@ public class LoginController {
     </body>
 </html>
 ```
+
+### 06. 日志的重要性
+
+日志记录是最重要的事情之一，无论何时调试生产中的问题，大多数唯一拥有的就是日志。
+
+在 `application.properties` 中 设置日志级别。
+```properties
+logging.level.org.springframework=debug
+```
+
+也可以指定某个包下的日志级别。
+```properties
+logging.level.com.grayjunzi.myfirstwebapp=debug
+```
+
+Spring Boot 让日志更为简单，它提供了一个名为 `spring-boot-starter-logging` 的启动程序，默认使用 `slf4j` 记录日志。
+
+使用日志记录信息。
+```java
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+private Logger logger = LoggerFactory.getLogger(getClass());
+
+logger.debug("Log {}", "Test debug");
+logger.debug("Log {}", "Test info");
+logger.debug("Log {}", "Test warn");
+logger.error("Log {}", "Test error");
+```
