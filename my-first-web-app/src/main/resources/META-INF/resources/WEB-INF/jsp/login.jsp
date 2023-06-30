@@ -5,6 +5,11 @@
     <body>
         Welcome to the Login Page!
 
-        ${name}
+        <form method="post">
+            Name: <input type="text" name="name"/>
+            Password: <input type="password" name="password"/>
+
+            <button type="submit">Submit</button>
+        </form>
     </body>
 </html>
