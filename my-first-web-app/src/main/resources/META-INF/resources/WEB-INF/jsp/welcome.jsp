@@ -7,7 +7,8 @@
         Welcome to my first web app
     </div>
     <div>
-        Your Name: ${name}, Password: ${password}
+        <div>Your Name: ${name}, Password: ${password}</div>
+        <a href="list-todos">Manage</a> your todos
     </div>
 </body>
 </html>
