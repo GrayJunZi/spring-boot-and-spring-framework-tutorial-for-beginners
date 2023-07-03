@@ -1,17 +1,21 @@
 <html>
-    <head>
-        <title>Login Page</title>
-    </head>
-    <body>
-        Welcome to the Login Page!
+<head>
+    <title>Login Page</title>
+</head>
+<body>
 
-        <pre>${errorMessage}</pre>
+<div class="container">
+    <h1>Login</h1>
 
-        <form method="post">
-            Name: <input type="text" name="name"/>
-            Password: <input type="password" name="password"/>
+    <pre>${errorMessage}</pre>
 
-            <button type="submit">Submit</button>
-        </form>
-    </body>
+    <form method="post">
+        Name: <input type="text" name="name"/>
+        Password: <input type="password" name="password"/>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
 </html>
