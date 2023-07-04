@@ -736,3 +736,6 @@ logger.error("Log {}", "Test error");
 ### 15. 添加Todo
 
 ### 16. 使用Spring Boot Starter Validation添加验证
+
+### 17. 使用Command Bean添加认证
+
