@@ -1,8 +1,5 @@
-<html>
-<head>
-    <title>Welcome Page</title>
-</head>
-<body>
+<%@ include file="common/header.jsp" %>
+
 <div class="container">
     <h1>Welcome ${name}</h1>
     <hr/>
@@ -10,5 +7,4 @@
         <a href="list-todos">Manage</a> your todos
     </div>
 </div>
-</body>
-</html>
+<%@ include file="common/footer.jsp" %>
