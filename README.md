@@ -750,3 +750,5 @@ logger.error("Log {}", "Test error");
 ### 22. Spring Security
 
 ### 23. 配置Spring Security自定义用户名和密码
+
+### 24. 重构与移除硬编码
