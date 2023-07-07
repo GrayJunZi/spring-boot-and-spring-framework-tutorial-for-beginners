@@ -748,3 +748,5 @@ logger.error("Log {}", "Test error");
 ### 21. 添加导航栏
 
 ### 22. Spring Security
+
+### 23. 配置Spring Security自定义用户名和密码
