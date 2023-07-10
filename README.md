@@ -754,3 +754,5 @@ logger.error("Log {}", "Test error");
 ### 24. 重构与移除硬编码
 
 ### 25. 创建新用户
+
+### 26. 添加Spring Boot Starter Data JPA 和 H2 DataBase ready
