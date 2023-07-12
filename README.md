@@ -755,4 +755,6 @@ logger.error("Log {}", "Test error");
 
 ### 25. 创建新用户
 
-### 26. 添加Spring Boot Starter Data JPA 和 H2 DataBase ready
+### 26. 添加Spring Boot Starter Data JPA 和 H2 DataBase
+
+### 27. 添加数据到H2数据库
