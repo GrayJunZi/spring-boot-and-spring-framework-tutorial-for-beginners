@@ -818,3 +818,39 @@ docker run -d -e MYSQL_ROOT_PASSWORD=root -e MYSQL_USER=todos -e MYSQL_PASSWORD=
 >   - `Spring Data JPA`
 >   - `H2 Database`
 >   - `Spring Boot DevTools`
+
+### 0802. 增强 Hello World REST API 以返回 Bean
+
+使用 `@RestController` 指定 Rest API控制器。`
+```java
+package com.grayjunzi.rest.webservices.restfulwebservices.helloworld;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloWorldController {
+    @RequestMapping(method = RequestMethod.GET,path= "/hello-world")
+    public String helloworld() {
+        return "Hello World";
+    }
+}
+
+```
+
+或者使用 `@GetMapping` 来替代Get请求映射
+```java
+package com.grayjunzi.rest.webservices.restfulwebservices.helloworld;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloWorldController {
+    @GetMapping(path = "hello-world")
+    public String helloworld() {
+        return "Hello World";
+    }
+}
+```
