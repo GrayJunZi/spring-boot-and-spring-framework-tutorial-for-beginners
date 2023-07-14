@@ -797,3 +797,24 @@ docker run -d -e MYSQL_ROOT_PASSWORD=root -e MYSQL_USER=todos -e MYSQL_PASSWORD=
 3. 将REST API连接到数据库
     - JPA和Hibernate基础知识。
     - 使用H2和MySQL数据库
+
+### 0801. 使用 Spring 引导初始化 REST API 项目
+
+我们可以使用引导程序 [start.spring.io](https://start.spring.io) 创建一个新的项目。
+
+> - `Project` : Maven
+> - `Language` : Java
+> - `Spring Boot` : 3.1.1
+> - `Project Metadata`
+> - `Group` : com.grayjunzi.rest.webservices
+>   - `Artifact` : restful-web-services
+>   - `Name` : restful-web-services
+>   - `Description` : Demo project for Spring Boot
+>   - `Package name` : com.grayjunzi.rest.webservices.restful-web-services
+>   - `Packaging` : Jar
+>   - `Java` : 20
+> - `Dependencies`
+>   - `Spring Web`
+>   - `Spring Data JPA`
+>   - `H2 Database`
+>   - `Spring Boot DevTools`
