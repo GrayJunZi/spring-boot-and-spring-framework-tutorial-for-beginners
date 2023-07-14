@@ -819,7 +819,7 @@ docker run -d -e MYSQL_ROOT_PASSWORD=root -e MYSQL_USER=todos -e MYSQL_PASSWORD=
 >   - `H2 Database`
 >   - `Spring Boot DevTools`
 
-### 0802. 增强 Hello World REST API 以返回 Bean
+### 0802. 使用 Spring Boot 创建 Hello World REST API
 
 使用 `@RestController` 指定 Rest API控制器。`
 ```java
@@ -852,5 +852,43 @@ public class HelloWorldController {
     public String helloworld() {
         return "Hello World";
     }
+}
+```
+
+### 0803. 增强 Hello World REST API 以返回 Bean
+
+创建 `bean` 类
+```java
+package com.grayjunzi.rest.webservices.restfulwebservices.helloworld;
+
+public class HelloWorldBean {
+    private String message;
+
+    public HelloWorldBean(String message) {
+        this.message = message;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    @Override
+    public String toString() {
+        return "HelloWorldBean{" +
+                "message='" + message + '\'' +
+                '}';
+    }
+}
+```
+
+指定响应结果类
+```java
+@GetMapping(path = "hello-world-bean")
+public HelloWorldBean helloworldBean() {
+    return new HelloWorldBean("Hello World");
 }
 ```
