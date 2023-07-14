@@ -762,3 +762,38 @@ logger.error("Log {}", "Test error");
 ### 28. 创建TodoRepository并连接H2数据库查询Todo列表
 
 ### 29. 将Todo所有功能都连接到H2数据库
+
+### 30. 将Todo应用程序连接到MySQL数据库的概述
+
+```bash
+docker run --detach --env MYSQL_ROOT_PASSWORD=root --env MYSQL_USER=todos --env MYSQL_PASSWORD=todos --env MYSQL_DATABASE=todos --name mysql --publish 3306:3306 mysql:8-oracle 
+```
+简写为
+```bash
+docker run -d -e MYSQL_ROOT_PASSWORD=root -e MYSQL_USER=todos -e MYSQL_PASSWORD=todos -e MYSQL_DATABASE=todos --name mysql -p 3306:3306 mysql:8-oracle
+```
+
+## 八、使用SpringBoot、Spring Framework、Hibernate创建REST API
+
+### 0800. 使用SpringBoot创建REST API
+
+- 为什么SpringBoot是构建REST API的最佳框架之一？
+- 如何构建一个伟大的REST API？
+  - 识别资源(/users, /users/{id}/posts)
+  - 识别动作(GET, POST, PUT, DELETE)
+  - 定义请求与响应结构
+  - 使用适当的响应状态(200, 404, 500)
+- 理解REST API的最佳实践
+  - 验证、国际化(internationalization, i18n)、异常处理、HATEOAS、版本控制(Versioning)、文档、内容协商。
+
+使用SpringBoot构建REST API的方法：
+1. 构建3个简单的Hello World的REST API项目
+    - 理解SpringBoot的神奇之处。
+    - 了解使用SpringBoot创建REST API的基本原理(fundamentals)
+      - @RestController、@RequestMapping、@PathVariable、JSON转换。
+2. 构建社交媒体应用程序的REST API
+    - 设计和构建一个好的REST API
+    - 构建高级REST API特性
+3. 将REST API连接到数据库
+    - JPA和Hibernate基础知识。
+    - 使用H2和MySQL数据库
