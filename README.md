@@ -892,3 +892,20 @@ public HelloWorldBean helloworldBean() {
     return new HelloWorldBean("Hello World");
 }
 ```
+
+### 0804. Spring Boot Starters & Autoconfig 的背后发生了什么
+
+启用Debug日志
+```java
+logging.level.org.springframework=debug
+```
+
+如何处理我们的请求？
+- DispatcherServlet - 前控制器模式(Front Controller Pattern)
+- 自动配置 (DispatcherServletAutoConfiguration)
+
+如何将HelloWorldBean对象转换为JSON？
+- @ResponseBody + JacksonHttpMessageConverters
+
+谁在配置错误映射?
+- Auto Configuration (ErrorMvcAutoConfiguration)
