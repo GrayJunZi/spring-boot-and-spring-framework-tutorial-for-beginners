@@ -909,3 +909,13 @@ logging.level.org.springframework=debug
 
 谁在配置错误映射?
 - Auto Configuration (ErrorMvcAutoConfiguration)
+
+### 0805. 使用路径变量增强 Hello World REST API
+
+使用 `@PathVariable` 接收路径参数
+```java
+@GetMapping(path = "hello-world-path-variable/{name}")
+public HelloWorldBean helloworldBeanPathVeriable(@PathVariable String name) {
+    return new HelloWorldBean(String.format("Hello World, %s", name));
+}
+```
