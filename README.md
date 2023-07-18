@@ -942,3 +942,5 @@ Posts API:
 - GET /users/{id}/posts - 获取一个用户的所有帖子
 - POST /users/{id}/posts - 为一个用户创建帖子
 - GET /users/{id}/posts/{post_id} - 获取帖子详细信息
+
+### 0807. 创建用户Bean和用户DaoService
