@@ -919,3 +919,26 @@ public HelloWorldBean helloworldBeanPathVeriable(@PathVariable String name) {
     return new HelloWorldBean(String.format("Hello World, %s", name));
 }
 ```
+
+### 0806. 为社交媒体应用程序设计 REST API
+
+- 构建设计媒体应用
+- 用户(User: Id, Name, BirthDate)
+- 帖子(Post: Id, Description)
+
+- GET-检索资源的详细信息
+- POST-创建一个新的资源
+- PUT-更新现有的资源
+- PATCH-更新资源的一部分
+- DELETE-删除资源
+
+Users API:
+- GET /users - 获取所有用户信息
+- POST /users - 创建用户
+- GET /users/{id} - 获取一个用户
+- DELETE /users/{id} - 删除一个用户
+
+Posts API:
+- GET /users/{id}/posts - 获取一个用户的所有帖子
+- POST /users/{id}/posts - 为一个用户创建帖子
+- GET /users/{id}/posts/{post_id} - 获取帖子详细信息
