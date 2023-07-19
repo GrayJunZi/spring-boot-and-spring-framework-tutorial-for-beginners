@@ -967,3 +967,19 @@ public void createUser(@RequestBody User user) {
     userDaoService.save(user);
 }
 ```
+
+### 0810. 增强POST方法返回正确的HTTP状志码和位置
+
+返回正确的响应状态
+- 404 - 资源未找到 
+- 500 - 服务端异常
+- 400 - 验证错误
+
+重要的响应状态
+- 200 - Success
+- 201 - Created
+- 204 - No Content
+- 401 - Unauthorized
+- 400 - Bad Request
+- 404 - Resource Not Found
+- 500 - Server Error
