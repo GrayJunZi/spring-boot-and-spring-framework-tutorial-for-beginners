@@ -958,3 +958,12 @@ public User retrieveUser(@PathVariable int id) {
     return userDaoService.findOne(id);
 }
 ```
+
+### 0809. 实现POST方法创建用户资源
+
+```java
+@PostMapping("/users")
+public void createUser(@RequestBody User user) {
+    userDaoService.save(user);
+}
+```
