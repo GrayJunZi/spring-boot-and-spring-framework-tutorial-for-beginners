@@ -944,3 +944,17 @@ Posts API:
 - GET /users/{id}/posts/{post_id} - 获取帖子详细信息
 
 ### 0807. 创建用户Bean和用户DaoService
+
+### 0808. 为用户资源实现GET方法
+
+```java
+@GetMapping("/users")
+public List<User> retrieveAllUsers() {
+    return userDaoService.findAll();
+}
+
+@GetMapping("/users/{id}")
+public User retrieveUser(@PathVariable int id) {
+    return userDaoService.findOne(id);
+}
+```
