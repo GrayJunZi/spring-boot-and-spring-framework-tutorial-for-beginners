@@ -983,3 +983,5 @@ public void createUser(@RequestBody User user) {
 - 400 - Bad Request
 - 404 - Resource Not Found
 - 500 - Server Error
+
+### 0811. 实现异常处理 - 404
